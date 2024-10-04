@@ -12,7 +12,7 @@ export const Main = () => { // Стрелочная функция??
     const [filterData, setFilterData] = useState([]); // Изменяемый / дополняемый массив
 
     useEffect(() => { 
-        const test = data.filter(el => el.keywords.toLowerCase().includes(inputItem.toLowerCase())) 
+        const test = data.filter(el => el.title.toLowerCase().includes(inputItem.toLowerCase()) || el.keywords.toLowerCase().includes(inputItem.toLowerCase())) 
         setFilterData(test)
     }, [inputItem])
 
