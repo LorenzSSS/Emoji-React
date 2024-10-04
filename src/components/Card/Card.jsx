@@ -8,3 +8,5 @@ export function Card({emoji, name, keywords}) {
         <p className={s.text}>{keywords}</p>
     </div>)
 }
+
+

@@ -1,8 +1,6 @@
 import s from './Input.module.css'
 
-export const Input = ({value, onChange}) => {
-    console.log(value);
-    
+export function Input({ value, onChange }) {
     return (
         <input 
             className={s.placeholder} 
@@ -11,4 +9,3 @@ export const Input = ({value, onChange}) => {
             onChange = {onChange}/>
     )
 }
-
